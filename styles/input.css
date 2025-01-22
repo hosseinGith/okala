@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  
+    @font-face {
+        font-family: iranYekan;
+        src: url('../assets/fonts/iranyekan-regular.woff2') format('woff2'),
+            url('../assets/fonts/iranyekan-regular.woff2') format('woff2');
+    }
+
+    @font-face {
+        font-family: vazir;
+        src: url('../assets/fonts/VAZIR\ REGULAR.TTF') format('truetype'),
+            url('../assets/fonts/IRANSANS-BOLDEDITORTEAM.TTF') format('truetype');
+    }
+
+    @font-face {
+        font-family: iransans;
+        src: url('../assets/fonts/IRANSANS-BOLDEDITORTEAM.TTF') format('truetype'),
+            url('../assets/fonts/IRANSANS-LIGHT\ EDITORTEAM.TTF') format('truetype'),
+            url('../assets/fonts/IRANSANS-MEDIUM_EDITORTEAM.TTF') format('truetype'),
+            url('../assets/fonts/IRANSANS\ EDITORTEAM.TTF') format('truetype'),
+    }
+
+    html {
+        scroll-behavior: smooth;
+        background: #d1d1d1;
+    }
+
+    body {
+        font-family: iranYekan, vazir, iransans;
+    }
+
+    * {
+        user-select: none;
+    }
+    .button{
+        @apply bg-mainBg text-contentBodyColor 
+    }
+    .price{
+        @apply px-2 rounded-full bg-mainBgLowOpacity text-mainBg text-[12px]
+    }
+}
