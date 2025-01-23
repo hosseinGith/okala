@@ -42,4 +42,40 @@
     .price{
         @apply px-2 rounded-full bg-mainBgLowOpacity text-mainBg text-[12px]
     }
+    .priceMainBg{
+        @apply px-2 rounded-full bg-mainBg text-contentBodyColor text-[12px]
+    }
+    .shakeAnimate{
+        animation: shakeAnimate 3s linear  infinite;
+        transform-origin: top center;
+    }
+    @keyframes  shakeAnimate {
+        25% {
+            transform: rotate(0) translateX(0)
+        }
+    
+        28% {
+            transform: rotate(30deg) translateX(5px)
+        }
+    
+        31% {
+            transform: rotate(-30deg)translateX(-5px)
+        }
+    
+        34% {
+            transform: rotate(30deg)translateX(5px)
+        }
+    
+        37% {
+            transform: rotate(-30deg)translateX(-5px)
+        }
+    
+        40% {
+            transform: rotate(30deg)translateX(5px)
+        }
+    
+        43% {
+            transform: rotate(0)translateX(0)
+        }
+    }
 }

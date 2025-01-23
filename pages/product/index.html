@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="fa"  dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,9 +10,9 @@
     <title>جزئـــــیات کـالا</title>
   </head>
   <body
-    class="max-w-[600px] h-full w-full mx-auto bg-bodyBg text-lowTextColor relative text-[15px]"
+    class="max-w-[600px] w-full mx-auto bg-bodyBg text-lowTextColor  text-[15px] min-h-screen relative"
   >
-    <header class="max-w-[600px]  translate-x-[-50%] fixed left-[50%] top-0 z-50 w-full">
+    <header class="max-w-[600px] scrollHiddenHeader delay-75 duration-500 transition-all translate-x-[-50%] fixed left-[50%] top-0 z-50 w-full">
       <section>
         <div class="container bg-contentBodyColor px-8 py-4">
           <div>
@@ -45,22 +45,22 @@
     </header>
     <main class="pt-[100px] px-6 space-y-8 relative">
       <section>
-        <div class="container">
-          <div class="bg-contentBodyColor rounded-3xl swiper">
+        <div class="container relative z-0">
+          <div class="bg-contentBodyColor  rounded-3xl swiper">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="flex w-full justify-center py-8">
                   <img
-                    class="w-[231px] h-[231px] aspect-video object-contain"
+                    class="max-w-[200px]"
                     src="../../assets/images/image.png"
                     alt=""
                   />
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="flex w-full justify-center">
+                <div class="flex w-full justify-center py-8">
                   <img
-                    class="w-[231px] h-[231px] aspect-video object-contain"
+                    class="max-w-[200px]"
                     src="../../assets/images/image.png"
                     alt=""
                   />
@@ -78,7 +78,7 @@
           </p>
         </div>
       </section>
-      <section class="mt-5 text-[12px] text-lowTextColor">
+      <section class="mt-5 text-[12px] text-lowTextColor ">
         <div class="container flex items-center justify-center gap-4">
           <a
             href="#"
@@ -213,7 +213,7 @@
       </section>
       <section class="bg-contentBodyColor">
         <div class="max-w-[600px] translate-x-[-50%] fixed left-[50%] bottom-0 w-full ">
-          <form class="bg-contentBodyColor flex py-8 justify-between px-6">
+          <form class="bg-contentBodyColor flex py-6 justify-between px-6">
             <button type="submit" class="button text-sm rounded-full px-8">افزودن به سبد</button>
             <div class="flex items-center gap-2 text-end">
               <span class="price">20%</span>
@@ -232,6 +232,7 @@
         </div>
       </section>
     </main>
+    <script src="../../scripts/main.js"></script>
     <script>
       const swiper = new Swiper(".swiper", {
         direction: "horizontal",
